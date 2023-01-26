@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>New Tab</title>
+</head>
+
+<body>
+    <!-- Part of initial setup -->
+    <div class="center">
+        <form id="login-form" class="hidden">
+            <input class="nameinput" required maxlength="22" type="text" placeholder="Enter your name here" />
+        </form>
+        <h1 id="greeting">Hello User!</h1>
+        <h1 id="currentTime">The time is now</h1>
+    </div>
+    <!-- THE SETUP MODAL -->
+    <div id="modal-wrapper">
+        <div id="modal-texts">
+            <h2 class="centered" id="hello">Hello</h2>
+            <h3 class="centered" id="thx-msg">Thanks for installing ClearStart Beta.
+                <br>
+                Let's start getting you setup!
+            </h3>
+            <h3 class="centered" id="theme">Choose the theme you like the most.</h3>
+        </div>
+        <!-- GALLERY -->
+        <div id="modal-gallery" class="scroller">
+            <div class="card-wrapper">
+                <div id="content">
+                    <figure id="img-container">
+                        <img id="card-img" src="./assets/pexels-andy-vu-3244513.jpg" alt="">
+                    </figure>
+                </div>
+                <div id="blackout"></div>
+                <div id="main-title">
+                    <h2 id="title" class="centered">Sandy</h2>
+                </div>
+                <div id="hov-txt">
+                    <p id="desc" class="centered">This describes the image</p>
+                    <button id="choose" class="flex-center"></button>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div id="content">
+                    <figure id="img-container">
+                        <img id="card-img" src="./assets/pexels-creative-vix-9754.jpg" alt="">
+                    </figure>
+                </div>
+                <div id="blackout"></div>
+                <div id="main-title">
+                    <h2 id="title" class="centered">Airy Mountain</h2>
+                </div>
+                <div id="hov-txt">
+                    <p id="desc" class="centered">This describes the image</p>
+                    <button id="choose" class="flex-center"></button>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div id="content">
+                    <figure id="img-container">
+                        <img id="card-img" src="./assets/pexels-francesco-ungaro-2325446.jpg" alt="">
+                    </figure>
+                </div>
+                <div id="blackout"></div>
+                <div id="main-title">
+                    <h2 id="title" class="centered">Wonders</h2>
+                </div>
+                <div id="hov-txt">
+                    <p id="desc" class="centered">This describes the image</p>
+                    <button id="choose" class="flex-center"></button>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div id="content">
+                    <figure id="img-container">
+                        <img id="card-img" src="./assets/pexels-pixabay-462162.jpg" alt="">
+                    </figure>
+                </div>
+                <div id="blackout"></div>
+                <div id="main-title">
+                    <h2 id="title" class="centered">Pacific Breeze</h2>
+                </div>
+                <div id="hov-txt">
+                    <p id="desc" class="centered">This describes the image</p>
+                    <button id="choose" class="flex-center"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="arrow-r">
+        <figure id="arrow-r-container">
+            <img id="arrow-r-icon" class="arrow" src="./assets/next.png" alt="">
+        </figure>
+    </div>
+    <div id="arrow-l">
+        <figure id="arrow-l-container">
+            <img id="arrow-l-icon" class="arrow move-left" src="./assets/next.png" alt="">
+        </figure>
+    </div>
+</body>
+<script src="./scripts/greeting.js"></script>
+<script src="./scripts/carousel.js"></script>
+
+</html>
