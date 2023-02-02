@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "ClearStart Beta",
+    "version": "1.0",
+    "description": "This is a productivity add-on to replace the traditional newtab page with a cleaner, less cluttered opening.",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["setup.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["carousel.js", "main-greet.js", "setup-config.js", "todo.js", "weather-request.js"]
+      }
+    ],
+    "chrome_url_overrides": {
+        "newtab": "main.html"
+      }
+  }

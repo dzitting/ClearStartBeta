@@ -1,7 +1,6 @@
-chrome.runtime.onInstalled.addListener(function (details) {
-    if (details.reason === "install") {
-      //Add initial setup
-      //
-    }
-  });
+chrome.runtime.onInstalled.addListener(function(details) {
+  if (details.reason === "install") {
+    chrome.browserAction.setPopup({popup: "setup.html"});
+  }
+});
   
