@@ -25,7 +25,7 @@ You'll be welcomed by the `modal` and be asked to select a desired theme, input 
 ClearStart Beta overrides the new-tab through the `manifest.json` so that every new tab opened, and even startup, will show you a personalized, productivity driven
 starting space.
 
-###Privacy Expectations/Usage/Data Collection
+### Privacy Expectations/Usage/Data Collection
 Per the `privacy policy` document, any data provided by the user is not collected or stored by developer. All the information provided by the user is stored locally on their device in `localStorage` for the extension to call to with future usage so as to prevent the user from reentering their information. 
 
 For example, when the user completes setup, the final "continue" button triggers a flag `localStorage.setupComplete` to be set to true, and it is stored locally. This prevents the user from experiencing another setup modal.
