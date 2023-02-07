@@ -4,7 +4,7 @@ const userName = localStorage.getItem("name");
 const storedImage = localStorage.getItem("backgroundImage");
 const body = document.querySelector("body");
 body.style.backgroundImage = `url(${storedImage})`;
- 
+
 //Checks that setup flag was triggered before allowing user onto main, otherwise redirecting to setup
 if (!setupCompleted) {
   window.location.href = "setup.html";
@@ -26,10 +26,10 @@ function updateGreetingAndTime() {
   
   document.getElementById("greeting").innerHTML = greeting;
 
-  const day = new Date();
+  const day = new Date(); //LOGIC
   let hours = day.getHours();
   let minutes = day.getMinutes();
-  const amPm = hours >= 12 ? "PM" : "AM";
+  const amPm = hours >= 12 ? "PM" : "AM"; //Formats clock to 12 hour AM/PM
   hours = hours % 12 || 12;
   minutes = minutes < 10 ? "0" + minutes : minutes;
   const time = hours + ":" + minutes + " " + amPm;

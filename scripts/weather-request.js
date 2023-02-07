@@ -1,7 +1,11 @@
-const API_KEY = 'c';
 const zipCode = localStorage.zip;
+chrome.storage.local.get("WEATHER_KEY", function (result) { //Gets the weather API from secure storage
+  const API_KEY = result.WEATHER_KEY;
+  fetchForWeather(API_KEY); //Calls function to use API
+});
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=${API_KEY}`)
+function fetchForWeather(API_KEY) {
+  fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${localStorage.zip},us&appid=${API_KEY}`)
   .then(response => response.json())
   .then(data => {
     console.log(data);
@@ -33,3 +37,5 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=$
   .catch(error => {
     console.error(error);
   });
+}
+
