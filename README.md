@@ -23,6 +23,3 @@ The initial opening of the extension will interact with an installation script `
 You'll be welcomed by the `modal` and be asked to select a desired theme, input your name, and be given a brief walk around of the clean tab look.
 ClearStart Beta overrides the new-tab through the `manifest.json` so that every new tab opened, and even startup, will show you a personalized, productivity driven
 starting space.
-
-## Some things to be noted...
-__ClearStart Beta__ is *_NOT_* yet ready to be launched, and is still deeply in developing stages. It is not yet avialable for download on the extension page.
