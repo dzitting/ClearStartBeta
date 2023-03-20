@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ClearStartBeta",
-    "version": "1.0",
+    "version": "1.1",
     "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArB5LLaOyca9CzycKdcqcmCOuTNUerpg2j2dwyM12fRhN68AGSeW+1s4FLObECbWNw1l/7Q3llUiPUV7KCxLEjXOgwyL5y+uTY9VshIQPg1kd6TR5s6ZGvjkFGnEZxJIbNrkoww8mBzMdggr4TbIMhzsdJxxpFjUwH+smXs6Qd2ICZV+7lK6prh7wHHFnK7qXsOf3oQ2mlb/TOrsrHaAzIbzGWedj/b6oO5ONRlmtY+mHVI96eLUu7dnHEhbm5q857jCpyMAL77X5So5Dw9vWx9r8+XNT+JOsfRtfDSDda5uc1BSP7uc8aJpkMEwtlPVV+N0RjrqucCJJFQKaHfHqLwIDAQAB",
 
     "description": "Productivity newtab override for a clean, more effective start on the browser.",
@@ -22,7 +22,7 @@
         "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
       },
       "permissions": [
-        "storage","activeTab","unlimitedStorage"
+        "storage","unlimitedStorage"
       ],
-      "version_name": "1.0 beta"
+      "version_name": "1.1 beta"
   }

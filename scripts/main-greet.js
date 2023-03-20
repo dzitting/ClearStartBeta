@@ -25,7 +25,7 @@ function updateGreetingAndTime() {
   }
   
   document.getElementById("greeting").innerHTML = greeting;
-
+  
   const day = new Date(); //LOGIC
   let hours = day.getHours();
   let minutes = day.getMinutes();
@@ -34,6 +34,7 @@ function updateGreetingAndTime() {
   minutes = minutes < 10 ? "0" + minutes : minutes;
   const time = hours + ":" + minutes + " " + amPm;
   document.getElementById("currentTime").innerHTML = time;
+  showCalendar(currentMonth, currentYear); //Calls function to generator calendar
 }
 
 setInterval(updateGreetingAndTime, 1000);
@@ -89,7 +90,6 @@ let currentYear = today.getFullYear();
 
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-showCalendar(currentMonth, currentYear); //Calls function to generator calendar
 
 function showCalendar(month, year) {
 
