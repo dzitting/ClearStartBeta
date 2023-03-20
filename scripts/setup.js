@@ -1,7 +1,7 @@
 function setKey() {
   // Store data in chrome.storage
   console.log("Get weather was called");
-  chrome.storage.local.set({'WEATHER_KEY': 'c6b654bc9b5d40b554412631311ed079'}, function() {
+  chrome.storage.local.set({'WEATHER_KEY': 'c6b6511ed079'}, function() {
   console.log('Weather key is stored');
   });
 };
